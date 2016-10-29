@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker run -d --net=host -e HOSTNAME=localhost tobegit3hub/standalone-kafka
+docker run -d --net=host -p 9092:9092  -p 2181:2181  -e HOSTNAME=localhost procrastinatio/standalone-kafka-zookeeper
